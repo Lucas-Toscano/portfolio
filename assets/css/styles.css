@@ -97,6 +97,7 @@
   transition: all 0.3s ease;
 }
 
+/* Mobile Responsive */
 @media screen and (max-width: 960px) {
   .navbarContainer {
     display: flex;
@@ -232,6 +233,7 @@
   background: #da22ff;
   background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
   background: linear-gradient(to right, #8f0eff, #da22ff);
+  background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -242,6 +244,7 @@
   border-bottom: 4px solid rgb(132, 0, 255);
 }
 
+/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .heroHeading {
     font-size: 60px;
@@ -253,3 +256,184 @@
 }
 
 /* About Section */
+.main {
+  background-color: #131313;
+  padding: 10rem 0;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.mainContent {
+  color: #fff;
+  width: 100%;
+}
+
+.mainContent h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 32px;
+}
+
+.mainContent h2 {
+  background: #da22ff;
+  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
+  background: linear-gradient(to right, #8f0eff, #da22ff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+}
+
+.mainContent p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mainButton {
+  font-size: 1.8rem;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.mainButton a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mainButton:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fd1d1d;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.mainButton:hover {
+  color: #fff;
+}
+
+.mainButton:hover::after {
+  width: 100%;
+}
+
+.mainImageContainer {
+  text-align: center;
+}
+
+.mainImageCard {
+  margin: 10px;
+  height: 500px;
+  width: 500px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100% );
+}
+
+#card2 {
+  background: #ff512f;
+  background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+  background: linear-gradient(to right, #dd2476, #ff512f);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 1100px) {
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+  }
+
+  .mainImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainImageCard {
+    height: 425px;
+    width: 425px;
+  }
+
+  .mainContent {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .mainContent h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .mainContent h2 {
+    font-size: 3rem;
+  }
+
+  .mainContent p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    .mainImageCard {
+      width: 250px;
+      height: 250px;
+    }
+
+    .mainContent h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+
+    .mainContent h2 {
+      font-size: 2rem;
+    }
+  
+    .mainContent p {
+      margin-top: 2rem;
+    }
+
+    .mainButton {
+      padding: 12px 36px;
+      margin: 2.5rem 0;
+    }
+  }
+}

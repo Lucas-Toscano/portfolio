@@ -482,6 +482,7 @@
   color: #fff;
   background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
   transition: 0.3s ease-in;
+  align-items: center;
 }
 /* .skillsCard:nth-child(2) {
 
@@ -489,6 +490,11 @@
 
 .skillsCard h2 {
   text-align: center;
+}
+
+.skillsCard img {
+  width: 30%;
+  margin-bottom: 24px;
 }
 
 .skillsCard p {
@@ -503,7 +509,7 @@
   margin-top: 16px;
 }
 
-.skillsCard button {
+.skillsCard a {
   color: #fff;
   padding: 14px 24px;
   border: none;
@@ -512,12 +518,13 @@
   background: #131313;
   font-size: 1rem;
   margin: 0px 5px;
+  text-decoration: none;
 }
 
-.skillsCard button:hover {
+.skillsCard a:hover {
   cursor: pointer;
-  color: black;
   background: #fff;
+  color: #131313;
   transition: 0.3s ease;
 }
 

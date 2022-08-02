@@ -621,6 +621,8 @@
 
 .skillsCard a.link:hover {
   background: none;
+  color: #ff0844;
+  transition: all 0.3s ease;
 }
 
 .skillsCard a:hover {
@@ -636,6 +638,24 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.skill {
+  /* background: #ff0844;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); */
+  padding: 10px 0px;
+  border-radius: 15px;
+  margin: 55px;
+  transition: 0.3s ease-in;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.skill:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /* Mobile */
 @media screen and (max-width: 1300px) {
   .skillsWrapper {
@@ -644,8 +664,75 @@
 }
 
 @media screen and (max-width: 768px) {
+  .skill {
+    margin: 30px;
+    transition: none;
+     align-items: center; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 1.5rem;
+  }
+  
+  .skill:hover {
+    transform: none;
+    transition: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
   .skillsWrapper {
     grid-template-columns: 1fr;
   }
+
+
+  .skillsCard:hover {
+    transform: none;
+    transition: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+
 }
 
+@media screen and (max-width: 480px) {
+  .skill {
+    margin: 10px;
+    transition: none;
+     align-items: center; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .skill:hover {
+    transform: none;
+    transition: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .skillsCard a {
+    padding: 14px 16px;
+    font-size: 1rem;
+    margin: 0px 5px;
+  }
+  
+  .skillsCard a.link {
+    color: #131313;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background: none;
+    font-size: 20px;
+    margin: 0px;
+    text-decoration: underline;
+  }
+  
+  .skillsCard a.link:hover {
+    background: none;
+
+  }
+  
+  .skillsCard a:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #131313;
+    transition: 0.3s ease;
+  }
+}

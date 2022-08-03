@@ -54,3 +54,21 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+// fetch github image
+const githubImage = document.querySelector('.githubImage');
+
+function getGithubUser() {
+  const url = 'https://api.github.com/users/Lucas-Toscano';
+  fetch(url).then(res=>res.json()).then(data=>{
+    console.log(data)
+  }).catch(e=>{
+    console.log(e)
+  });
+
+  // if(data) {
+  //   githubImage.src = data['avatar_url'];
+  // }
+}
+getGithubUser();
+
